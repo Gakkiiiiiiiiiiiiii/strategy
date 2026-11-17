@@ -1,0 +1,20 @@
+{
+  "selected_trades.csv": {
+    "trades": 99,
+    "hold": 20,
+    "max_gross_error": 2.6769805483439768e-08,
+    "prefix_week_checks": 99,
+    "prefix_month_checks": 99,
+    "prefix_macd_verified": true,
+    "chart_volume_and_daily_return_verified": true
+  },
+  "macd_trades.csv": {
+    "trades": 83,
+    "hold": 30,
+    "max_gross_error": 4.6156242827777305e-08,
+    "prefix_week_checks": 83,
+    "prefix_month_checks": 83,
+    "prefix_macd_verified": true,
+    "chart_volume_and_daily_return_verified": true
+  }
+}

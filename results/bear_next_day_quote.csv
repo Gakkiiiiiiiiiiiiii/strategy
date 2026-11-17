@@ -1,0 +1,2 @@
+﻿code,signal_date,quote_date,open,close,upper_limit,open_at_limit,close_at_limit,source
+sz.002959,2026-11-16,2026-11-17,37.33,39.90,39.9,False,True,"https://web.ifzq.gtimg.cn/appstock/app/kline/kline?param=sz002959,day,2026-11-10,,12"

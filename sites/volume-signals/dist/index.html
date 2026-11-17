@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="沪深 A 股四阶段量价形态的历史信号、分组回测和小熊电器案例。">
+  <meta name="theme-color" content="#171b30">
+  <title>量价信号复盘</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="candles-v3.css">
+  <script src="data.js" defer></script>
+  <script src="candles-v3.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="rail">
+    <a class="brand" href="#overview" aria-label="量价研究首页">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>量价研究<small>沪深 A 股</small></span>
+    </a>
+    <nav aria-label="页面导航"><a href="multiframe.html"><span aria-hidden="true">↗</span> 多周期优化</a>
+      <a href="research.html"><span aria-hidden="true">↗</span>优化策略研究</a>
+      <a href="#overview" aria-current="location"><span aria-hidden="true">▤</span>回测概览</a>
+      <a href="#signals"><span aria-hidden="true">▦</span>信号明细</a>
+      <a href="#case"><span aria-hidden="true">◇</span>小熊电器案例</a>
+      <a href="#method"><span aria-hidden="true">◎</span>回测口径</a>
+    </nav>
+    <div class="rail-foot"><i></i>历史日线快照 <strong>2026.11.16</strong></div>
+  </aside>
+  <main id="overview">
+    <header class="page-header">
+      <div>
+        <p class="context"><span>策略研究</span><span class="slash">/</span> 形态回测</p>
+        <h1>量价信号复盘</h1>
+        <p class="subhead">挖坑下跌 <span>→</span> 放量拉升 <span>→</span> 缩量回落 <span>→</span> 放量突破</p>
+      </div>
+      <div class="head-actions">
+        <span class="data-range"><i></i>2022.01 — 2026.11</span>
+        <a class="button primary" href="summary.csv" download>↓ 导出回测汇总</a>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="覆盖范围">
+      <article><span class="stat-icon" aria-hidden="true">≋</span><div><h2>历史信号</h2><strong id="stat-signals">—</strong><p>涉及 <b id="stat-codes">—</b> 只股票</p></div></article>
+      <article><span class="stat-icon" aria-hidden="true">▦</span><div><h2>扫描覆盖</h2><strong id="stat-universe">—</strong><p>沪深 A 股标的</p></div></article>
+      <article><span class="stat-icon" aria-hidden="true">↗</span><div><h2>次日开盘未涨停</h2><strong id="stat-normal">—</strong><p>5 日胜率 <b id="stat-win">—</b></p></div></article>
+      <article><span class="stat-icon" aria-hidden="true">↑</span><div><h2>次日开盘涨停</h2><strong id="stat-limit">—</strong><p><b id="stat-opened">—</b> 个开板 · <b id="stat-locked">—</b> 个全天一字</p></div></article>
+    </section>
+
+    <div class="overview-grid">
+      <section class="panel performance" aria-labelledby="performance-title">
+        <div class="section-head">
+          <div><h2 id="performance-title">持有期收益对比</h2><p>次日开盘买入 · 第 N 个交易日收盘估值</p></div>
+          <div class="segment" id="basis" aria-label="收益分组">
+            <button type="button" data-value="open" aria-pressed="true">按开盘</button>
+            <button type="button" data-value="close" aria-pressed="false">按收盘</button>
+          </div>
+        </div>
+        <div class="chart-tools">
+          <div class="chart-legend" id="chart-legend"></div>
+          <label class="control-label">指标
+            <select id="metric"><option>平均收益</option><option>中位收益</option><option>胜率</option></select>
+          </label>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="return-chart" role="img" aria-label="不同持有期收益对比图"></canvas>
+        </div>
+        <div class="chart-foot">
+          <p class="chart-note" id="chart-note"></p>
+          <details class="chart-values">
+            <summary>查看数值</summary>
+            <table aria-label="当前图表的分组收益和样本数">
+              <thead id="chart-table-head"></thead>
+              <tbody id="chart-table-body"></tbody>
+            </table>
+          </details>
+        </div>
+      </section>
+
+      <section class="panel case-card" id="case" aria-labelledby="case-title">
+        <header>
+          <p class="case-label"><i></i>参考案例</p>
+          <h2 id="case-title">小熊电器<span>002959.SZ</span></h2>
+        </header>
+        <div class="case-price"><strong id="case-return">+10.01%</strong><span><b id="case-volume-5">—</b> 前 5 日 · <b id="case-volume">—</b> 前 10 日</span></div>
+        <canvas id="bear-chart" role="img" aria-label="小熊电器复权收盘价及形态标记"></canvas>
+        <div class="case-bottom">
+          <span><span class="case-dot"></span>信号日 <b>2026.11.16</b></span>
+          <button type="button" id="case-detail">查看案例 <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel signals" id="signals" aria-labelledby="signals-title">
+      <header class="section-head">
+        <div><h2 id="signals-title">信号明细</h2><p>点击标的查看信号前后 K 线、成交量和各持有期收益。</p></div>
+        <a class="button secondary" href="signals.csv" download>↓ 导出全部信号</a>
+      </header>
+      <div class="filters">
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="搜索股票代码或简称" aria-label="搜索股票代码或简称"></label>
+        <label class="control-label">信号年份<select id="year"><option value="">全部年份</option></select></label>
+        <label class="control-label">次日开盘<select id="entry">
+          <option value="">全部</option><option value="open_not_at_limit">开盘未涨停</option>
+          <option value="any_limit">开盘涨停</option><option value="opens_at_limit">开盘涨停、盘中开板</option>
+          <option value="one_price_limit">全天一字涨停</option><option value="pending">次日超出快照</option>
+          <option value="no_bar">次日无日线</option>
+        </select></label>
+        <label class="control-label">次日收盘<select id="close">
+          <option value="">全部</option><option value="yes">收盘涨停</option><option value="no">收盘未涨停</option><option value="unknown">暂无分组</option>
+        </select></label>
+        <button type="button" id="reset" class="reset">重置</button>
+      </div>
+      <div class="table-scroll" tabindex="0" aria-label="逐笔信号表，可横向滚动">
+        <table>
+          <thead><tr>
+            <th scope="col">标的</th>
+            <th scope="col"><button data-sort="signal_date" type="button">信号日期 <span aria-hidden="true"></span></button></th>
+            <th scope="col" class="number"><button data-sort="signal_return" type="button">信号日涨跌 <span aria-hidden="true"></span></button></th>
+            <th scope="col">次日开盘</th>
+            <th scope="col">次日收盘</th>
+            <th scope="col" class="number"><button data-sort="return_5" type="button">5 日 <span aria-hidden="true"></span></button></th>
+            <th scope="col" class="number"><button data-sort="return_10" type="button">10 日 <span aria-hidden="true"></span></button></th>
+            <th scope="col" class="number"><button data-sort="return_20" type="button">20 日 <span aria-hidden="true"></span></button></th>
+            <th scope="col" class="number"><button data-sort="return_30" type="button">30 日 <span aria-hidden="true"></span></button></th>
+          </tr></thead>
+          <tbody id="signal-rows"></tbody>
+        </table>
+      </div>
+      <footer class="table-footer">
+        <span id="match-count" role="status"></span>
+        <div class="pager"><button id="previous" type="button" aria-label="上一页">‹</button><span id="page-number"></span><button id="next" type="button" aria-label="下一页">›</button></div>
+      </footer>
+    </section>
+
+    <section class="panel method" id="method" aria-labelledby="method-title">
+      <div class="section-head"><div><h2 id="method-title">回测口径</h2><p>通达信历史日线 · BaoStock 补齐 2026.11.05–11.16</p></div></div>
+      <div class="method-grid">
+        <div><h3>形态筛选</h3><p>挖坑回撤至少 20%。拉升段上涨至少 14%，日均量严格高于截至坑底当天的 5 日和 10 日均量。回落段均量至多为拉升段的 75%，收盘守住坑底。信号日涨幅大于 6%，成交量严格高于此前 5 日和 10 日均量，上影线至多为阳线实体的三分之一。</p></div>
+        <div><h3>收益计算</h3><p>买入日计为第 1 个交易日。收益以复权价格计算，为扣费前结果。开盘涨停按开盘价计算理论收益，盘中开板与全天一字在明细中分列。收盘涨停分组仅用于复盘比较。</p></div>
+        <div><h3>样本边界</h3><p>各持有期样本数取决于到期行情是否齐备。破折号表示收益暂不可算。小熊电器 11 月 17 日的行情为单独核对的参考，回测汇总使用截至 11 月 16 日的全市场快照。退市股覆盖取决于本机行情缓存。</p></div>
+      </div>
+    </section>
+    <footer class="page-footer"><span>量价信号复盘</span><span>沪深 A 股 · 历史快照截至 2026.11.16</span></footer>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="detail-head"><div id="detail-heading"></div><form method="dialog"><button type="submit" aria-label="关闭详情">×</button></form></div>
+    <div id="detail-body"></div>
+  </dialog>
+  <noscript><p class="no-script">开启 JavaScript 后可筛选历史信号和查看图表。<a href="signals.csv" download>下载全部信号</a></p></noscript>
+</body>
+</html>

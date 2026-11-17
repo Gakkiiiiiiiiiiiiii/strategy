@@ -1,0 +1,5 @@
+# Versions used for the 2026-11-16 research snapshot (Python 3.12).
+numpy==1.26.4
+pandas==2.2.2
+numba==0.60.0
+baostock==0.9.4

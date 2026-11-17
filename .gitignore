@@ -1,0 +1,47 @@
+# Local environments and Python / Numba caches
+.deps/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+
+# Credentials, host metadata, and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/.openai/
+**/.sites-runtime/
+*.pem
+*.key
+
+# Downloaded packages and market inputs
+tdxquant/
+data/
+*.whl
+*.day
+
+# Large intermediate research files and logs
+*.pkl
+*.npz
+*.npy
+*.log
+*.tar.gz
+*.zip
+results/optimization/
+results/research_v2/configs.json
+results/research_v2/portfolio_configs.json
+results/research_v3/configs.json
+
+# Rebuild the browser data from local backtest results
+sites/volume-signals/dist/ohlcv/
+sites/volume-signals/dist/chart-data/
+sites/volume-signals/dist/research-chart-data/
+sites/volume-signals/dist/data.js
+sites/volume-signals/dist/*-data.js
+sites/volume-signals/dist/*.csv
+sites/volume-signals/dist/*report.json
+
+# Local upload bookkeeping
+.github-upload/
