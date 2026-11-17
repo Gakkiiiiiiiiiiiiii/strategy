@@ -1,0 +1,34 @@
+{
+  "balanced_original_stop_trades.csv": {
+    "trades": 115,
+    "sales": 206,
+    "max_net_error": 4.440892098500626e-16,
+    "t_plus_one": true,
+    "raw_ticks_verified": true,
+    "share_conservation": true
+  },
+  "balanced_uncapped_stop_trades.csv": {
+    "trades": 124,
+    "sales": 217,
+    "max_net_error": 4.718447854656915e-16,
+    "t_plus_one": true,
+    "raw_ticks_verified": true,
+    "share_conservation": true
+  },
+  "macd_original_stop_trades.csv": {
+    "trades": 98,
+    "sales": 176,
+    "max_net_error": 4.440892098500626e-16,
+    "t_plus_one": true,
+    "raw_ticks_verified": true,
+    "share_conservation": true
+  },
+  "macd_uncapped_stop_trades.csv": {
+    "trades": 110,
+    "sales": 192,
+    "max_net_error": 4.996003610813204e-16,
+    "t_plus_one": true,
+    "raw_ticks_verified": true,
+    "share_conservation": true
+  }
+}

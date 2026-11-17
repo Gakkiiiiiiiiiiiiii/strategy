@@ -6,6 +6,7 @@
 
 ## 在线查看
 
+- [最新：取消涨幅上限与分级止损对照](https://volume-signal-review.sharp-coin-9055.chatgpt.site/stops.html)
 - [量能与周线平衡版](https://volume-signal-review.sharp-coin-9055.chatgpt.site/multiframe.html)
 - [量能与 MACD 排序版](https://volume-signal-review.sharp-coin-9055.chatgpt.site/macd.html)
 - [上一版首波反转策略](https://volume-signal-review.sharp-coin-9055.chatgpt.site/research.html)
@@ -30,7 +31,10 @@
 | `sites/volume-signals/export_*.py` | 将研究结果导出到静态网页 |
 | `sites/volume-signals/dist/` | HTML、CSS、JavaScript 和 K 线交互组件 |
 | `results/research_v2/final_report.json` | 上一版回测结果快照 |
-| `results/research_v3/` | 最新结果、参数对照、核对记录和两组模拟成交明细 |
+| `results/research_v3/` | 多周期历史结果、参数对照、核对记录和两组模拟成交明细 |
+| `stoploss_v4.py` | 冻结买入参数，移除9.5%涨幅上限及分级止损的四组交叉对照 |
+| `test_stoploss_v4.py`、`audit_v4.py` | T+1、跳空、跌停、除权与整手测试，以及逐笔成交核对 |
+| `results/research_v4/` | 最新对照、独立核对、逐笔成交和卖出现金流 |
 
 ## 环境与数据
 
@@ -85,22 +89,28 @@ python research_v3.py search
 python finalize_v3.py
 python compare_rank_v3.py
 
+# 冻结参数后的止损对照；无新增参数搜索
+python stoploss_v4.py
+python -m unittest test_stoploss_v4.py
+python audit_v4.py
+
 # 导出基础页面数据与完整日线，再核对和生成最新页面
 python sites/volume-signals/export_data.py
 python sites/volume-signals/export_research.py
 python sites/volume-signals/export_chart_store.py
 python audit_v3.py
 python sites/volume-signals/export_multiframe.py
+python sites/volume-signals/export_stoploss.py
 
 # 本地预览
 python -m http.server 8765 --bind 127.0.0.1 --directory sites/volume-signals/dist
 ```
 
-浏览器访问 `http://127.0.0.1:8765/multiframe.html`。`export_data.py` 还需要原案例的 `results/bear_next_day_quote.csv`；该文件属于 11 月 17 日单独核对的小熊电器行情快照，已随本仓库保存。不要把它自动视作新交易日的全市场数据。
+浏览器访问 `http://127.0.0.1:8765/stops.html`。`export_data.py` 还需要原案例的 `results/bear_next_day_quote.csv`；该文件属于 11 月 17 日单独核对的小熊电器行情快照，已随本仓库保存。不要把它自动视作新交易日的全市场数据。
 
 `export_candles.py` 与 `candles.js` 保留了上一版分片实现；当前页面使用 `export_chart_store.py` 和 `candles-v3.js`。部署服务的身份文件没有入库，本仓库不会自动修改现有网站的发布设置。
 
-## 当前研究结果
+## 多周期历史研究结果（v3）
 
 下表是反复检验 2022—2026 年历史数据之后选出的候选，**没有独立的前瞻样本**。100 万元初始资金、最多 10 个持仓、整手交易，往返总成本按 0.35% 模拟。
 
@@ -115,6 +125,36 @@ python -m http.server 8765 --bind 127.0.0.1 --directory sites/volume-signals/dis
 日线放量定义始终为：成交量严格高于此前 5 日和 10 日均量，均量不含信号日。阳阴量按收盘与开盘的关系划分。周月指标只使用信号当时已经完成的周期；需要右侧 K 线确认的低点，也必须在信号前完成确认。
 
 网页支持日 / 周 / 月 K、信号前 60 / 120 / 250 / 500 日或全部历史、信号后范围选择、成交量与 MACD，并逐根显示开高低收和涨跌幅。日涨跌幅使用除权参考前收，周月涨跌幅使用上一周期复权收盘价。
+
+## 最新固定规则对照（v4）
+
+本次不重新搜索买入参数，仅取消信号日涨幅低于9.5%的上限，并新增分级止损。两组共同条件是：信号涨幅大于6%，阳线、上影不超过实体1/3，成交量高于此前5日及10日均量；股价至少3元、20日均成交额至少3000万元，市场近20日等权复合收益小于0。
+
+| 条件 | 量能与周线（20日） | MACD排序（30日） |
+| --- | --- | --- |
+| 前期高点与底部 | 前250日高点至前60日低点下跌至少30% | 前120日高点至前60日低点下跌至少30% |
+| 低点距信号日 | 至多15日 | 至多8日 |
+| 信号前一日距低点 | 不高于12% | 不高于8% |
+| 市场当日等权收益 | 至少1.5% | 至少2% |
+| 附加特征 | 前40日平均阳量/阴量至少1，已完成周线动量改善 | 阳阴量、已确认MACD底背离及柱体回升综合排序 |
+| 同日优先次序 | 20日均成交额降序 | MACD与量能综合分降序 |
+
+MACD底背离是排序加分项，并非每一笔必须满足。月线保留为研究及复盘维度，未作为这两组的必选条件。
+
+设信号日除权参考前收为P、信号收盘为C：减半线为 `(P+C)/2`，清仓线为 `P`，均与信号日开盘价无关。价格严格跌破中点时卖出初始持仓的一半，严格跌破前收时清空余仓；减半按100股向下取整，仅100股时跳过减半。买入日触发则锁定到最早可卖日开盘；封死跌停顺延，跳空穿越按实际开盘成交，盘中以线下第一分钱估算。未触发的余仓在20/30个交易日届满退出。买入日计第1日。
+
+所有止损线按除权转换，K线展示按信号日复权；买卖流水显示各自当日未复权价。现金分红再投资近似及按初始股数整手分仓沿用旧模型，未逐项模拟券商交割。买入日T+1延迟、卖出资金再使用、持仓槽位及费用均进入组合模拟。
+
+| 方案 | 组合年化 | 最大回撤 | 胜率 | 盈亏比 | 单笔平均净收益 | 成交数 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 20日，取消上限、不止损 | 22.90% | -12.43% | 67.29% | 2.26 | 11.01% | 107 |
+| 20日，取消上限＋分级止损 | 12.53% | -8.04% | 47.58% | 3.78 | 5.20% | 124 |
+| 30日，取消上限、不止损 | 33.87% | -15.77% | 76.92% | 2.18 | 17.86% | 91 |
+| 30日，取消上限＋分级止损 | 20.50% | -11.23% | 47.27% | 6.07 | 9.23% | 110 |
+
+止损减小最差单笔损失，却也提前卖出随后反弹的持仓；盈亏比提高并不意味着组合收益提高。网站同时保留“原上限＋止损”辅助组与固定同批买入对照，以区分涨幅上限、退出规则以及资金再分配的影响。
+
+验证包括：10项边界测试、旧规则99/83笔入场与原组合年化复现、四个止损组447笔交易及791次卖出核对。新规则页面默认显示124/110笔成交，点击个股可见两条止损线、实际卖出标记、止损距离、卖出原因及逐根K线涨跌幅。日线数据仍无法证明盘中成交可实现。
 
 ## 结果的限制
 

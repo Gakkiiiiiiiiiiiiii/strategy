@@ -17,6 +17,8 @@ def export():
                 'research_v3/macd_trades.csv','research_v3/macd_all_signals.csv'):
         path=ROOT/'results'/src
         if path.exists():codes.update(pd.read_csv(path).code)
+    for path in (ROOT/'results/research_v4').glob('*_trades.csv'):
+        codes.update(pd.read_csv(path).code)
     panel=pd.read_pickle(ROOT/'results/research_v2/panel.pkl')
     _,updates=bt.updated_bars(20261104,20261116,{})
     followup=json.loads((HERE/'bear-followup.json').read_text(encoding='utf-8'))
