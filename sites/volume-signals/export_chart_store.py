@@ -19,6 +19,9 @@ def export():
         if path.exists():codes.update(pd.read_csv(path).code)
     for path in (ROOT/'results/research_v4').glob('*_trades.csv'):
         codes.update(pd.read_csv(path).code)
+    for path in (ROOT/'results/research_v5').glob('*_signals.csv'):
+        rows=pd.read_csv(path)
+        codes.update(rows.loc[rows.entry_status.isin(['filled','upper_open']),'code'])
     panel=pd.read_pickle(ROOT/'results/research_v2/panel.pkl')
     _,updates=bt.updated_bars(20261104,20261116,{})
     followup=json.loads((HERE/'bear-followup.json').read_text(encoding='utf-8'))

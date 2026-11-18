@@ -1,0 +1,9 @@
+{
+  "verified_horizon_returns": 81690,
+  "max_return_error": 0.0,
+  "prefix_recalculations": 55,
+  "same_wave_deduplicated": true,
+  "same_stock_overlap_excluded": true,
+  "immature_not_filled": true,
+  "limitation": "Numerical/data consistency checks cannot prove intraday fills or remove selection bias."
+}
