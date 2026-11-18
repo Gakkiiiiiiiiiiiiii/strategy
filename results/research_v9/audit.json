@@ -1,0 +1,7 @@
+{
+  "prefix_bottom_and_macd_checks": 413,
+  "net_return_checks": 1937,
+  "max_return_error": 4.440892098500626e-16,
+  "primary_requires_core_and_long_decline": true,
+  "prior_results_preserved": true
+}

@@ -1,0 +1,9 @@
+{
+  "code": "sh.601888",
+  "name": "中国中免",
+  "signal_date": 20240125,
+  "impulse_date": 20240118,
+  "decline": 0.4014447884416925,
+  "decline_days": 109,
+  "selection": "Largest signal-time amount20 in long-decline primary signals; no return selection."
+}

@@ -1,0 +1,33 @@
+{
+  "asof": 20261116,
+  "search": false,
+  "market": "frozen surviving-universe equal-weight daily returns",
+  "confirmation": "prior-day trailing20 market return <0; today market >=1%; stock >6% and >market+2pp; positive body, wick<=body/3, volume>prior5 and prior10; price>=3, amount20>=30m",
+  "impulse": "same stock candle/liquidity rules; market daily<=0 and trailing20 including impulse<0; most recent such day 5-30 market sessions before confirmation",
+  "intervening": "market index at confirmation-1 below impulse close; no selection using post-confirmation prices",
+  "pullback": "prior close 5-20% below highest close from impulse through confirmation-1; every intervening close >=pre-impulse close; last3 volume <=70% mean from impulse through known peak",
+  "resistant": "entire waiting-phase maximum close-to-close drawdown <5%; every intervening close >=pre-impulse close; recovered-after-deep-dip kept separate",
+  "entry": "confirmation+1 market session open; upper-limit open skipped; no 9.5% cap; historical ST excluded",
+  "exit": "5/10/20/30/60/120 sessions; entry is day1; hard15% stop default; T+1 and locked lower-limit delayed; same-entry no-stop control",
+  "repeated": "first qualifying confirmation per stock/impulse for each setup group; same-stock nonoverlap separately by horizon, using common stop/no-stop exit",
+  "industry": "prior-calendar-year-end dated CSRC industry snapshot; blank/future/unknown excluded; focal stock removed from peer daily returns and breadth",
+  "industry_confirmation": "at least20 other members; sector prior5 return beats market prior5, sector today beats market, >=60% other members up",
+  "controls": "Fixed v8 nonleader controls on same signal date, board and liquidity quartile; not selected by later returns.",
+  "split": "entry<=2024 and entire stop/no-stop exit<=2024 training-description; signals>=2025 retrospective validation; cross-boundary excluded",
+  "cost": 0.0035,
+  "limitations": [
+    "Previously inspected history, no pristine holdout or proven absorption/causality.",
+    "Current TDX price universe omits some delisted stocks.",
+    "Annual lagged classifications can be stale; CSRC industry is not a theme/concept board.",
+    "Event statistics do not model portfolio capital or imply CAGR."
+  ],
+  "version": "v9",
+  "mandatory_bottom": "At the FIRST impulse S: L=min adjusted close[S-60:S]; H=max adjusted close[S-120:floor+1]; decline>=30%, floor age<=8, close[S-1]<=1.08*L.",
+  "mandatory_long_decline": "Primary profile requires last occurrence of original peak to floor>=60 stock sessions; pre-S MA60<MA60 at S-21<MA60 at S-41. A flat plateau followed by a recent crash must not count as a long decline.",
+  "comparison": "macd_core retains original bottom rules without the new duration/trend requirement; long_decline is the primary profile. V8 broad stock selection is never the main profile.",
+  "anchor_selection": "Choose most recent qualifying bottom impulse 5-30 market sessions before T, after applying the profile filters; do not first select a generic impulse then merely label its depth.",
+  "ranking": "At T: clip(log(bull/bear mean volume over prior40),-1,1)+confirmed near MACD divergence+0.5*histogram recovery; descending, then amount20, then code.",
+  "ranking_scope": "Ordering of same-day candidate watchlists only. Event averages do not model capital/slots and do not quantify ranking alpha.",
+  "confirmation_floor_distance": "Explicitly report T-1 close/L-1 and actual buy/L-1. The old8% rule is mandatory at S, not silently reapplied after the waiting phase; near8 at T is an additional diagnostic.",
+  "execution_change": "None versus v8: next open, no9.5% cap, hard15% stop, same horizons/cost. This isolates the restored selection rules."
+}
