@@ -1,0 +1,50 @@
+{
+  "asof": 20261116,
+  "data_start": 20210802,
+  "holding_days": [
+    5,
+    10,
+    20,
+    30,
+    60,
+    120
+  ],
+  "cost": 0.0035,
+  "low": "floor close <= 1.15 * prior 500-session minimum close; at least 250 prior bars",
+  "decline": "prior 250-session peak to floor >=30%",
+  "rally": "last 60-session peak after a 5-60 bar rally of >=15% from prior 90-bar low",
+  "volume": "rally average > both pre-floor 5 and 10-bar means",
+  "pullback": "5-30 bars, price decline 5%-30%, retrace 20%-85%, no close below floor",
+  "wash_volume": "last 5 pullback bars mean <=70% of rally mean; whole-pullback mean retained for diagnosis",
+  "extreme": "3-bar mean <=40% of rally mean AND <=50% of preceding 20-bar mean; current volume <= previous 10-bar minimum",
+  "entry": "confirmation at close; next market-session open; ST on setup/confirmation/entry excluded; upper-limit open skipped",
+  "exit": "entry is day1; scheduled close; locked lower-limit/suspension delays to first sellable open",
+  "dedup": "first qualifying signal per stock/floor/peak; then exclude overlapping same-stock trades per horizon",
+  "stop": "buy adjusted price * 0.85; at/below rounded-down tick triggers full exit; T+1 entry-day breach latched to next sellable open; gap/locked-down exits may lose more than 15%",
+  "warning": "retrospective, surviving TDX universe; daily execution estimate; total-return adjustment approximation",
+  "profiles": {
+    "ordinary": {
+      "label": "普通缩量",
+      "dry": 0.7,
+      "relative": 0.8,
+      "minimum": 5
+    },
+    "extreme": {
+      "label": "极致缩量",
+      "dry": 0.4,
+      "relative": 0.5,
+      "minimum": 10
+    },
+    "ultra": {
+      "label": "更严缩量",
+      "dry": 0.25,
+      "relative": 0.35,
+      "minimum": 20
+    }
+  },
+  "parameter_optimization": false,
+  "confirmation_wait": 20,
+  "confirmation": "first later bullish body (close > open), volume > preceding 5 AND 10 means; within 20 market sessions; cancel after a close below original floor",
+  "maturity": "all horizon cohorts require full calendar maturity even if stopped early; cash earns zero after exit",
+  "comparison": "matched stop/no-stop comparison uses the same mature nonoverlapping confirmation entries; benchmark ends at horizon, not early stop"
+}

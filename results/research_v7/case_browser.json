@@ -1,0 +1,2617 @@
+{
+  "retracement:5:3": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 0,
+    "exit_date": 0,
+    "included": true,
+    "split": "validation",
+    "horizon": 5,
+    "weights": [
+      0.0,
+      0.0,
+      0.75,
+      0.25
+    ],
+    "net": 0.0,
+    "spent": 0.0,
+    "stopped": false,
+    "status": "未成交",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      }
+    ],
+    "horizons": [
+      5
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_5": 0
+  },
+  "retracement:5:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260901,
+    "included": true,
+    "split": "validation",
+    "horizon": 5,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.06710526266997086,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260901,
+        "raw_price": 7.66,
+        "signal_price": 7.66,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260901,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      5
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_5": 20260901
+  },
+  "common:5:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260901,
+    "included": true,
+    "split": "validation",
+    "horizon": 5,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": 0.08947368355996144,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260901,
+        "raw_price": 7.66,
+        "signal_price": 7.66,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260901,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      5
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_5": 20260901
+  },
+  "extension:5:3": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 0,
+    "exit_date": 0,
+    "included": true,
+    "split": "validation",
+    "horizon": 5,
+    "weights": [
+      0.0,
+      0.0,
+      0.75,
+      0.25
+    ],
+    "net": 0.0,
+    "spent": 0.0,
+    "stopped": false,
+    "status": "未成交",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      }
+    ],
+    "horizons": [
+      5
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_5": 0
+  },
+  "extension:5:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260901,
+    "included": true,
+    "split": "validation",
+    "horizon": 5,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.06710526266997086,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260901,
+        "raw_price": 7.66,
+        "signal_price": 7.66,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260901,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      5
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_5": 20260901
+  },
+  "retracement:10:3": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 0,
+    "exit_date": 0,
+    "included": true,
+    "split": "validation",
+    "horizon": 10,
+    "weights": [
+      0.0,
+      0.0,
+      0.75,
+      0.25
+    ],
+    "net": 0.0,
+    "spent": 0.0,
+    "stopped": false,
+    "status": "未成交",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      }
+    ],
+    "horizons": [
+      10
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_10": 0
+  },
+  "retracement:10:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260908,
+    "included": true,
+    "split": "validation",
+    "horizon": 10,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.08487357377190197,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260908,
+        "raw_price": 7.9,
+        "signal_price": 7.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260908,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      10
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_10": 20260908
+  },
+  "common:10:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260908,
+    "included": true,
+    "split": "validation",
+    "horizon": 10,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": 0.11316476502920292,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260908,
+        "raw_price": 7.9,
+        "signal_price": 7.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260908,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      10
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_10": 20260908
+  },
+  "extension:10:3": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 0,
+    "exit_date": 0,
+    "included": true,
+    "split": "validation",
+    "horizon": 10,
+    "weights": [
+      0.0,
+      0.0,
+      0.75,
+      0.25
+    ],
+    "net": 0.0,
+    "spent": 0.0,
+    "stopped": false,
+    "status": "未成交",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      }
+    ],
+    "horizons": [
+      10
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_10": 0
+  },
+  "extension:10:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260908,
+    "included": true,
+    "split": "validation",
+    "horizon": 10,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.08487357377190197,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260908,
+        "raw_price": 7.9,
+        "signal_price": 7.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260908,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      10
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_10": 20260908
+  },
+  "common:20:18": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260922,
+    "included": true,
+    "split": "validation",
+    "horizon": 20,
+    "weights": [
+      0.25,
+      0.0,
+      0.75,
+      0.0
+    ],
+    "net": 0.11647141647733106,
+    "spent": 0.25,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260922,
+        "raw_price": 9.9,
+        "signal_price": 9.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      20
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_20": 20260922
+  },
+  "retracement:20:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260922,
+    "included": true,
+    "split": "validation",
+    "horizon": 20,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.23294283295466212,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260922,
+        "raw_price": 9.9,
+        "signal_price": 9.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      20
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_20": 20260922
+  },
+  "common:20:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260922,
+    "included": true,
+    "split": "validation",
+    "horizon": 20,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": 0.3105904439395497,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260922,
+        "raw_price": 9.9,
+        "signal_price": 9.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      20
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_20": 20260922
+  },
+  "extension:20:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20260922,
+    "included": true,
+    "split": "validation",
+    "horizon": 20,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.23294283295466212,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20260922,
+        "raw_price": 9.9,
+        "signal_price": 9.9,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      20
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_20": 20260922
+  },
+  "common:30:18": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20261014,
+    "included": true,
+    "split": "validation",
+    "horizon": 30,
+    "weights": [
+      0.25,
+      0.0,
+      0.75,
+      0.0
+    ],
+    "net": 0.15904132849237462,
+    "spent": 0.25,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20261014,
+        "raw_price": 11.05,
+        "signal_price": 11.05,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261014,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      30
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_30": 20261014
+  },
+  "retracement:30:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20261014,
+    "included": true,
+    "split": "validation",
+    "horizon": 30,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.31808265698474925,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20261014,
+        "raw_price": 11.05,
+        "signal_price": 11.05,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261014,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      30
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_30": 20261014
+  },
+  "common:30:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20261014,
+    "included": true,
+    "split": "validation",
+    "horizon": 30,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": 0.42411020931299914,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20261014,
+        "raw_price": 11.05,
+        "signal_price": 11.05,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261014,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      30
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_30": 20261014
+  },
+  "extension:30:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 20261014,
+    "included": true,
+    "split": "validation",
+    "horizon": 30,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": 0.351881434382036,
+    "spent": 0.75,
+    "stopped": false,
+    "status": "已退出",
+    "path": 0,
+    "path_gap": 0.0,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      },
+      {
+        "date": 20260922,
+        "raw_price": 9.7,
+        "signal_price": 9.7,
+        "weight": 0.25,
+        "level": "1.382",
+        "label": "买3"
+      }
+    ],
+    "sell_events": [
+      {
+        "date": 20261014,
+        "raw_price": 11.05,
+        "signal_price": 11.05,
+        "reason": "expiry"
+      }
+    ],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      },
+      {
+        "price": 6.3707060849598145,
+        "label": "15%止损",
+        "start": 20260922,
+        "end": 20261014,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      30
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_30": 20261014
+  },
+  "common:60:18": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 60,
+    "weights": [
+      0.25,
+      0.0,
+      0.75,
+      0.0
+    ],
+    "net": null,
+    "spent": 0.25,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      60
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_60": 0
+  },
+  "retracement:60:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 60,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": null,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      60
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_60": 0
+  },
+  "common:60:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 60,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": null,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      60
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_60": 0
+  },
+  "extension:60:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 60,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": null,
+    "spent": 0.75,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      },
+      {
+        "date": 20260922,
+        "raw_price": 9.7,
+        "signal_price": 9.7,
+        "weight": 0.25,
+        "level": "1.382",
+        "label": "买3"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      },
+      {
+        "price": 6.3707060849598145,
+        "label": "15%止损",
+        "start": 20260922,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      60
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_60": 0
+  },
+  "common:120:8": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 120,
+    "weights": [
+      0.0,
+      0.25,
+      0.75,
+      0.0
+    ],
+    "net": null,
+    "spent": 0.25,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买1"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      120
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_120": 0
+  },
+  "retracement:120:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 120,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": null,
+    "spent": 0.5,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      120
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_120": 0
+  },
+  "common:120:35": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 120,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0
+    ],
+    "net": null,
+    "spent": 0.6666666666666666,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      3.89
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.3333333333333333,
+        "level": "0.5",
+        "label": "买2"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 3.89,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      120
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_120": 0
+  },
+  "extension:120:20": {
+    "event_id": 45053,
+    "code": "sz.300369",
+    "name": "绿盟科技",
+    "signal_date": 20260825,
+    "signal_label": "缩量/挂单",
+    "entry_date": 20260826,
+    "exit_date": 0,
+    "included": false,
+    "split": "case",
+    "horizon": 120,
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "net": null,
+    "spent": 0.75,
+    "stopped": false,
+    "status": "未到期",
+    "path": 1,
+    "path_gap": null,
+    "floor_price": 5.15,
+    "peak_price": 8.44,
+    "levels": [
+      7.18,
+      6.79,
+      6.4,
+      9.7
+    ],
+    "buy_events": [
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.382",
+        "label": "买1"
+      },
+      {
+        "date": 20260826,
+        "raw_price": 6.73,
+        "signal_price": 6.73,
+        "weight": 0.25,
+        "level": "0.5",
+        "label": "买2"
+      },
+      {
+        "date": 20260922,
+        "raw_price": 9.7,
+        "signal_price": 9.7,
+        "weight": 0.25,
+        "level": "1.382",
+        "label": "买3"
+      }
+    ],
+    "sell_events": [],
+    "price_lines": [
+      {
+        "price": 7.18,
+        "label": "0.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.79,
+        "label": "0.5",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 6.4,
+        "label": "0.618",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 9.7,
+        "label": "1.382",
+        "start": 20260825,
+        "color": "#b18a31"
+      },
+      {
+        "price": 5.7205,
+        "label": "15%止损",
+        "start": 20260826,
+        "end": 20260922,
+        "color": "#bc4b76"
+      },
+      {
+        "price": 6.3707060849598145,
+        "label": "15%止损",
+        "start": 20260922,
+        "end": 20261116,
+        "color": "#bc4b76"
+      }
+    ],
+    "horizons": [
+      120
+    ],
+    "stage_events": [
+      {
+        "date": 20260629,
+        "label": "底部",
+        "color": "#258b78"
+      },
+      {
+        "date": 20260806,
+        "label": "第一波高点",
+        "color": "#b87824"
+      }
+    ],
+    "exit_date_120": 0
+  }
+}

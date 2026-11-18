@@ -1,0 +1,16 @@
+{
+  "asof": 20261116,
+  "wait": 20,
+  "stop": 0.15,
+  "cost": 0.0035,
+  "anchor": "v5 first extreme dry-up setup; L is adjusted intraday low on the known floor date; H is highest adjusted intraday high from floor through the already known closing-peak date; anchors frozen thereafter",
+  "levels": "H-r*(H-L) for r=.382,.5,.618; fourth H-1.382*(H-L) or L+1.382*(H-L)",
+  "orders": "valid from next market session for 20 sessions, cancel unfilled at stop/exit; no retrospective fills; limit gap fills at open, extension gap fills at open only after a retracement leg filled; upper-limit opens skip buys; historical ST days skip buys",
+  "sizing": "fixed budget fractions including fees, unfilled cash earns zero; stop uses weighted average filled cost, marks adjusted for corporate actions",
+  "risk": "stop is 15% below weighted filled price, assessed before adding through an existing stop; cancel all orders on breach; sell eligible shares, T+1 shares queue until next sellable open; do not cancel at old floor so deep 1.382 remains testable",
+  "horizon": "5/10/20/30/60/120 market sessions from first fill, entry day=1; no adds on expiry day",
+  "cohort": "same mature setup cohort per horizon, full 20-session confirmation window plus next-open entry and horizon must fit snapshot; setup windows separated per stock",
+  "path": "minimum terminal return of two global daily paths O-H-L-C and O-L-H-C; not a proof of fill or exhaustive worst case",
+  "selection": "25 percentage point weight grid + equal thirds and 20/30/50; training exits through 2024-12-31; validation setups from 2025-01-01; best staged has >=2 nonzero legs, >=100 filled training setups, >=50% fill rate; choose highest mean total-budget net return only in training",
+  "caveat": "historical data already explored; temporal holdout is not pristine unseen validation; survivor universe and multiple comparisons remain"
+}

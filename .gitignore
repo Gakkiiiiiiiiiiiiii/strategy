@@ -43,6 +43,7 @@ sites/volume-signals/dist/chart-data/
 sites/volume-signals/dist/research-chart-data/
 sites/volume-signals/dist/data.js
 sites/volume-signals/dist/*-data.js
+sites/volume-signals/dist/*-data.json.gz
 sites/volume-signals/dist/*.csv
 sites/volume-signals/dist/*report.json
 

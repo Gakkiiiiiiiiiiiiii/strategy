@@ -1,0 +1,9 @@
+{
+  "selected_ladders": 13264,
+  "max_cash_error": 4.440892098500626e-16,
+  "execution_prefix_checks": 111,
+  "t1_no_same_day_share_sales": true,
+  "training_only_selection": true,
+  "tests": 9,
+  "caveat": "Checks establish accounting under the stated daily path assumptions, not actual market fills."
+}
