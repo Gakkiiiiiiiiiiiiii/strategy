@@ -56,8 +56,9 @@ def scan(close,volume,amount,raw_close):
         if near>1.15:continue
         high=np.max(close[f-250:f]);decline=1-close[f]/high
         rally=close[p]/close[f]-1;drop=1-close[i]/close[p]
+        if decline<.30 or rally<.15:continue
         retrace=(close[p]-close[i])/(close[p]-close[f])
-        if decline<.30 or rally<.15 or drop<.05 or drop>.30 or retrace<.20 or retrace>.85:continue
+        if drop<.05 or drop>.30 or retrace<.20 or retrace>.85:continue
         if np.min(close[p+1:i+1])<close[f]:continue
         rv=np.mean(volume[f+1:p+1]);base=max(np.mean(volume[f-4:f+1]),np.mean(volume[f-9:f+1]))
         if rv<=base:continue
