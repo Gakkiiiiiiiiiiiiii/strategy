@@ -1,0 +1,26 @@
+[
+  {
+    "type": "pullback",
+    "code": "sh.601138",
+    "name": "工业富联",
+    "signal_date": 20240709,
+    "impulse_date": 20240606,
+    "selection": "Highest signal-time 20-day average turnover among 2024 first qualifying signals; no outcome selection.",
+    "pullback": 0.05800139762403922,
+    "dry_ratio": 0.33785668096594007,
+    "phase_market": -0.046254833173934085,
+    "phase_stock": 0.034138856923666916
+  },
+  {
+    "type": "resistant",
+    "code": "sh.601888",
+    "name": "中国中免",
+    "signal_date": 20240125,
+    "impulse_date": 20240118,
+    "selection": "Highest signal-time 20-day average turnover among 2024 first qualifying signals; no outcome selection.",
+    "pullback": 0.024758957266992065,
+    "dry_ratio": 0.7401880561028702,
+    "phase_market": -0.05312456103585539,
+    "phase_stock": -0.024642857142857078
+  }
+]

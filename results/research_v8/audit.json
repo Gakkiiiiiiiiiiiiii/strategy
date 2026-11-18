@@ -1,0 +1,11 @@
+{
+  "prefix_only_rebuilds": 101,
+  "dated_industry_snapshots": 5,
+  "leave_one_out_sector_checks": 19,
+  "industry_basket_return_checks": 8,
+  "independent_return_checks": 289662,
+  "max_return_error": 8.881784197001252e-16,
+  "entry_dates_and_ST_verified": true,
+  "stop_ticks_and_T1_verified": true,
+  "warning": "Validates implemented calculations, not economic causality or future profitability."
+}

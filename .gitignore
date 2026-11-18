@@ -34,6 +34,8 @@ results/research_v2/configs.json
 results/research_v2/portfolio_configs.json
 results/research_v3/configs.json
 results/research_v5/status_cache/
+results/research_v8/status_cache/
+results/research_v8/industry_cache/
 results/research_v5/sh.000300.csv
 results/research_v5/sz.300369.csv
 

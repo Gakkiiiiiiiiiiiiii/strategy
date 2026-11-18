@@ -1,0 +1,37 @@
+[
+  {
+    "signal_year": 2022,
+    "requested_asof": "2021-12-31",
+    "max_update": "2021-11-15",
+    "rows": 4686,
+    "classified": 4654
+  },
+  {
+    "signal_year": 2023,
+    "requested_asof": "2022-12-31",
+    "max_update": "2022-08-01",
+    "rows": 4930,
+    "classified": 4898
+  },
+  {
+    "signal_year": 2024,
+    "requested_asof": "2023-12-31",
+    "max_update": "2023-12-25",
+    "rows": 5326,
+    "classified": 5294
+  },
+  {
+    "signal_year": 2025,
+    "requested_asof": "2024-12-31",
+    "max_update": "2024-12-30",
+    "rows": 5407,
+    "classified": 5375
+  },
+  {
+    "signal_year": 2026,
+    "requested_asof": "2025-12-31",
+    "max_update": "2025-12-29",
+    "rows": 5493,
+    "classified": 5179
+  }
+]
