@@ -1,5 +1,6 @@
 """One full-history OHLCV store per stock, shared by all signal pages."""
 import json
+import gzip
 import sys
 from pathlib import Path
 from contextlib import ExitStack
@@ -45,8 +46,8 @@ def export():
                              round(ohlc[-1]/raw[-1,3]-1,10),float(factor[-1])])
             assert all(x[2]>=max(x[1],x[4]) and x[3]<=min(x[1],x[4]) for x in rows)
             obj=dict(code=code,asof=int(rows[-1][0]),market_asof=20261116,rows=rows)
-            text='window.fullCandleData['+json.dumps(code)+']='+json.dumps(obj,separators=(',',':'),allow_nan=False)+';\n'
-            (target/(code.replace('.','')+'.js')).write_text(text,encoding='utf-8')
+            payload=json.dumps(obj,separators=(',',':'),allow_nan=False).encode('utf-8')
+            (target/(code.replace('.','')+'.json.gz')).write_bytes(gzip.compress(payload,compresslevel=6,mtime=0))
             total+=len(rows)
     print(f'Full history: {len(codes)} stocks, {total:,} daily bars; daily pct and adjustment factors included')
 

@@ -6,11 +6,17 @@
   const money=v=>(v/100).toFixed(2),pct=v=>v==null?'—':`${v>0?'+':''}${(v*100).toFixed(2)}%`;
   const dateInt=d=>Number(d.toISOString().slice(0,10).replaceAll('-',''));
   function load(row){
-    if(!requests.has(row.code)) requests.set(row.code,new Promise((resolve,reject)=>{
-      const s=document.createElement('script');s.src='ohlcv/'+row.code.replace('.','')+'.js';
-      s.onload=()=>{s.remove();const data=window.fullCandleData[row.code];data?resolve(data):reject(Error('Missing candles'))};
-      s.onerror=()=>{s.remove();requests.delete(row.code);reject(Error('Chart load failed'))};document.head.append(s);
-    }));return requests.get(row.code);
+    if(!requests.has(row.code)) requests.set(row.code,(async()=>{
+      const response=await fetch('ohlcv/'+row.code.replace('.','')+'.json.gz');
+      if(!response.ok)throw Error('Chart load failed');
+      const bytes=new Uint8Array(await response.arrayBuffer());
+      // Some hosts set Content-Encoding, so the browser may already have decoded it.
+      const text=bytes[0]===31&&bytes[1]===139
+        ?await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).text()
+        :new TextDecoder().decode(bytes);
+      const data=JSON.parse(text);if(data.code!==row.code||!Array.isArray(data.rows))throw Error('Invalid candles');
+      window.fullCandleData[row.code]=data;return data;
+    })().catch(error=>{requests.delete(row.code);throw error}));return requests.get(row.code);
   }
   function periods(daily,type,asof){
     let bars=[];

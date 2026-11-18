@@ -114,6 +114,8 @@ python -m http.server 8765 --bind 127.0.0.1 --directory sites/volume-signals/dis
 
 `export_candles.py` 与 `candles.js` 保留了上一版分片实现；当前页面使用 `export_chart_store.py` 和 `candles-v3.js`。部署服务的身份文件没有入库，本仓库不会自动修改现有网站的发布设置。
 
+完整逐股K线以 `ohlcv/*.json.gz` 保存，打开个股时由浏览器解压；OHLC、成交量、涨跌幅、复权因子及历史范围均保留。网页依赖支持 `DecompressionStream` 的现代浏览器。
+
 ## 多周期历史研究结果（v3）
 
 下表是反复检验 2022—2026 年历史数据之后选出的候选，**没有独立的前瞻样本**。100 万元初始资金、最多 10 个持仓、整手交易，往返总成本按 0.35% 模拟。
